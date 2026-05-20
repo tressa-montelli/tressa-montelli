@@ -1,65 +1,65 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Tressa Montelli | Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: auto;
-      padding: 40px;
-      line-height: 1.6;
-      background-color: #f8f8f8;
-      color: #222;
-    }
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link href="resources/photon-geocoder-autocomplete.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
 
-    h1 {
-      font-size: 40px;
-    }
-
-    .project {
-      background: white;
-      padding: 20px;
-      margin-top: 30px;
-      border-radius: 10px;
-    }
-
-    img {
-      width: 100%;
-      border-radius: 8px;
-      margin-top: 15px;
-    }
-
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-  </style>
-</head>
-
-<body>
-
-<h1>Tressa Montelli</h1>
-
-<p>
-Public health, GIS, research, and data analysis portfolio.
-</p>
-
-<div class="project">
-
-<h2>Spatial Analysis of Drug-Related Mortality and Naloxone Access in New York City</h2>
-
-<p>
-This interactive GIS project examines the spatial relationship between drug-related mortality and naloxone accessibility across New York City ZIP codes using QGIS, NYC Department of Health mortality data, and publicly available naloxone distribution site data.
-</p>
-
-<p>
-<a href="nyc-naloxone-map/index.html">
-View Interactive Map
-</a>
-</p>
-
-</div>
-
-</body>
+        <style>
+        #map {
+            width: 969px;
+            height: 802px;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="resources/photon-geocoder-autocomplete.min.js"></script>
+        <script src="resources/olms.js"></script>
+        <script src="layers/DrugRelatedDeathsperzipcode20192021_1.js"></script><script src="layers/12mileaccessibilitytositesradius_2.js"></script><script src="layers/NYCFreeNalaxoneKitSites_3.js"></script>
+        <script src="styles/DrugRelatedDeathsperzipcode20192021_1_style.js"></script><script src="styles/12mileaccessibilitytositesradius_2_style.js"></script><script src="styles/NYCFreeNalaxoneKitSites_3_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
 </html>
