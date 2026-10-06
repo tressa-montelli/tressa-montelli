@@ -36,6 +36,54 @@
   <p>AI, data analysis, research, and technical projects.</p>
 
 <div class="project">
+  <h2>ClauseCheck: AI-Assisted Contract Review</h2>
+
+  <img src="review-summary.png"
+     alt="ClauseCheck review summary and contract overview"
+     style="width:100%; border-radius:8px; margin-top:15px;">
+
+  <img src="human-review.png"
+     alt="ClauseCheck human review, missing provisions, and limitations"
+     style="width:100%; border-radius:8px; margin-top:15px;">
+
+  <img src="clause-review.png"
+     alt="ClauseCheck clause-level review with evidence and source location"
+     style="width:100%; border-radius:8px; margin-top:15px;">
+
+  <p>
+    ClauseCheck is an AI-assisted contract review tool I built to identify key provisions, retrieve supporting contract language, and surface ambiguous, missing, or potentially significant terms for human review. The application uses a two-stage AI pipeline to separate evidence retrieval from relationship analysis, followed by deterministic Python logic that assigns final review statuses.
+  </p>
+
+  <p>
+    <strong>Tools:</strong> Python, Streamlit, OpenAI API, Pydantic, PyPDF, Pandas, ReportLab
+  </p>
+
+  <h3>Key Skills Demonstrated</h3>
+  <ul>
+    <li>Designed a two-stage LLM workflow separating full-contract evidence retrieval from downstream analysis</li>
+    <li>Used structured Pydantic outputs to capture findings, evidence locations, and classification signals</li>
+    <li>Moved final status classification into deterministic Python logic after testing exposed inconsistent model-generated labels</li>
+    <li>Tested cross-clause relationships, overrides, missing dependencies, and ambiguous contract language using synthetic evaluation cases</li>
+    <li>Implemented evidence traceability and human-review workflows for uncertain or potentially significant provisions</li>
+    <li>Built PDF and CSV reporting for both human-readable and structured review outputs</li>
+  </ul>
+
+  <p>
+    <a href="https://clausecheck-6tcjgmr6s6pk7htecxsfse.streamlit.app/"
+       target="_blank"
+       style="display:inline-block; padding:10px 15px; background:#0066cc; color:white; border-radius:6px; text-decoration:none;">
+      View Live App
+    </a>
+
+    <a href="https://github.com/tressa-montelli/ClauseCheck"
+       target="_blank"
+       style="display:inline-block; padding:10px 15px; background:#0066cc; color:white; border-radius:6px; text-decoration:none; margin-left:8px;">
+      View Source Code
+    </a>
+  </p>
+</div>
+  
+<div class="project">
   <h2>StudySifter: AI-Assisted Scientific Literature Extraction</h2>
 
   <img src="studysifter-preview.png"
