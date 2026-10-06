@@ -37,18 +37,27 @@
 
 <div class="project">
   <h2>ClauseCheck: AI-Assisted Contract Review</h2>
-
+<div style="width:70%; margin:15px auto o;">
+  <!-- Top image -->
   <img src="review-summary.png"
-     alt="ClauseCheck review summary and contract overview"
-     style="width:100%; border-radius:8px; margin-top:15px;">
+       alt="ClauseCheck review summary and contract overview"
+       style="width:100%; display:block; border-radius:8px;">
 
-  <img src="human-review.png"
-     alt="ClauseCheck human review, missing provisions, and limitations"
-     style="width:100%; border-radius:8px; margin-top:15px;">
+  <!-- Bottom two images -->
+  <div style="display:flex; gap:12px; margin-top:12px; align-items:flex-start;">
 
-  <img src="clause-review.png"
-     alt="ClauseCheck clause-level review with evidence and source location"
-     style="width:100%; border-radius:8px; margin-top:15px;">
+    <img src="human-review.png"
+         alt="ClauseCheck human review, missing provisions, and limitations"
+         style="width:calc(50% - 6px); border-radius:8px;">
+
+    <img src="clause-review.png"
+         alt="ClauseCheck clause-level review with evidence and source location"
+         style="width:calc(50% - 6px); border-radius:8px;">
+
+  </div>
+
+</div>
+  
 
   <p>
     ClauseCheck is an AI-assisted contract review tool I built to identify key provisions, retrieve supporting contract language, and surface ambiguous, missing, or potentially significant terms for human review. The application uses a two-stage AI pipeline to separate evidence retrieval from relationship analysis, followed by deterministic Python logic that assigns final review statuses.
